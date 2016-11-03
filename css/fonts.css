@@ -1,0 +1,60 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/*Montserrat Regular*/
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/generated/Montserrat-Regular.eot');
+	src: url('../fonts/generated/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/generated/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/generated/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*Kaushan Script*/
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('../fonts/generated/KaushanScript-Regular.eot');
+	src: url('../fonts/generated/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/generated/KaushanScript-Regular.woff') format('woff'),
+		url('../fonts/generated/KaushanScript-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*Montserrat Bold*/
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/generated/Montserrat-Bold.eot');
+	src: url('../fonts/generated/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/generated/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/generated/Montserrat-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

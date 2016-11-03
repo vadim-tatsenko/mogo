@@ -1,0 +1,48 @@
+@mixin linxColors($color, $hover){
+	color: $color;
+	&:hover{
+		color: $hover;
+	}
+}
+@mixin imgOnHoverChange($firstImg,$secondImg,$positionX,$positionY,$color:transparent){
+	background: url($firstImg) $positionX $positionY no-repeat;
+	&:hover{
+		background: url($secondImg) $positionX $positionY no-repeat;
+		background-color: $color;
+	}	
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow:inset $top $left $blur $color;
+		-moz-box-shadow:inset $top $left $blur $color;
+		box-shadow:inset $top $left $blur $color;
+		} @else {
+			-webkit-box-shadow: $top $left $blur $color;
+			-moz-box-shadow: $top $left $blur $color;
+			box-shadow: $top $left $blur $color;
+		}
+	}
+
+	@mixin scrollbars($size, $foreground-color, $background-color) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+  	width:  $size;
+  	height: $size;
+  	margin: 20px 25px 20px 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+  	background: $foreground-color;
+  	border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+  	background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+  	scrollbar-face-color: $foreground-color;
+  	scrollbar-track-color: $background-color;
+  }
+}
