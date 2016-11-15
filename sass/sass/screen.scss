@@ -46,7 +46,6 @@
  	.goTopButton{
  		display: none;
  		position: fixed;
- 		left: 1250px;
  		top: 100px;
  		width: 60px;
  		height: 60px;
@@ -212,8 +211,6 @@ header{
 					img{
 						@include box-shadow(10px,10px,1px,#95e1d3);
 					}
-					top: -5px;
-					left: -5px;
 					.signature{
 						visibility: visible;
 						position: absolute;

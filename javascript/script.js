@@ -1,11 +1,10 @@
+
+
 $(document).ready(function() {
-	var upDownButtons = $('div.upDown');
-
-	upDownButtons.each(function(index, el) {
-		this.Up = false;
-		this.Down = true;
-	});
-
+	//появление и исчезновение кнопки
+	var left = $('body').width()/2 + (1200/2 - 60);
+	$('#wrapper .goTopButton').css('left', left);
+	
 	$(this).scroll(function(event) {
 		var distanceFromTop = 900;
 		if($(this).scrollTop() > distanceFromTop){
@@ -15,21 +14,37 @@ $(document).ready(function() {
 		else
 			if($('#wrapper .goTopButton').hasClass('disp'))
 				$('#wrapper .goTopButton').toggleClass('disp');
-	});
+		});
 
+
+
+
+
+	//пролистать вверх goTopButton
 	var animationTime = 1200;
 	$('#wrapper .goTopButton').click(function(event) {
 		$('body').animate({scrollTop: 0}, animationTime);
 	});
 
 
-	$('div.upDown').each(function(){
-		$(this).click(function(){
 
-			var upUrl = '../images/arrow/up.png';
-			var downUrl = '../images/arrow/down.png';
 
-			if(this.Down){
+
+////////////////////////////////////////////////////////////////////////////////
+var upDownButtons = $('div.upDown');
+
+upDownButtons.each(function(index, el) {
+	this.Up = false;
+	this.Down = true;
+});
+
+$('div.upDown').each(function(){
+	$(this).click(function(){
+
+		var upUrl = '../images/arrow/up.png';
+		var downUrl = '../images/arrow/down.png';
+
+		if(this.Down){
 				//Проверяем выран ли какой-то елелмент, если да, то сворачиваем его
 				$('.upDown').each(function(){
 					if(this.Up == true)
@@ -50,14 +65,22 @@ $(document).ready(function() {
 				this.Up = false;
 			}
 		});
-	});
+});
 
-	function slide( url, color, display, element){
+function slide( url, color, display, element){
 		 //element.css('background','url('+url+') no-repeat 97% 60%');
 		 element.css('background-image','url('+url+')');
 		//element.css('background-color', color);
 		element.next().css('display', display);
 	}
+
+
+
+
+
+
+
+
 
 	//navbar переход к секции
 	$('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
